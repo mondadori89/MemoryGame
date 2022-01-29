@@ -1,0 +1,33 @@
+* {
+    text-align: center;
+}
+
+.card {
+    display: inline-block;
+    background: url('images/card-back.png');
+    /*background-repeat: no-repeat;*/
+    background-size: 100%;
+    width: 200px;
+    height: 300px;
+}
+
+.player {
+    display: inline-block;
+    margin-inline: 100px;
+}
+
+#startButton {
+    border-radius: 4px;
+    color: #05A8AA;
+    display: block;
+    font-weight: 700;
+    width: 200px;
+    padding: 20px;
+    margin: 40px auto;
+    border: 1px solid blue;
+}
+#startButton:hover {
+    background-color: #05A8AA;
+    border: 1px solid #05A8AA;
+    color: #FFF;
+  }

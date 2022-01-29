@@ -1,0 +1,19 @@
+Botão Start - vai misturar e dizer com q 'bixo' vai estar cada carta
+	Criar um array com os bixos [bixoA, bixoB, bixoC...] 
+	Criar array random com numeros de 1-6 misturados
+	Carta#1 = array[random[1]]
+	Carta#2 = array[random[2]]
+	...
+
+funcção de revelar e desrevelar a carta.
+
+Pronto... MVP para testar
+
+Depois: colocar mais cartas
+Depois: regra de quando acerta as cartas ficam fixas abertas 
+Depois: regra de quem é a vez
+Depois: regra quando erra não pode cliar em nenhuma, tem q desvirar para mudar a vez
+Depois: regra quando acerta vai de novo
+Depois: incluir pontuação
+
+ 
