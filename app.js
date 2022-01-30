@@ -1,13 +1,12 @@
-// ---- Memory game v1.1 ---- 
-// Código refatorado
-// Práximo passo, incluir mais cartas
+// ---- Memory game v1.2 ---- 
+// Código refatorado, mais cartas incluídas
 
 // opções nas cartas
-const arrBixos = ['horse', 'horse', 'dog', 'dog', 'cat', 'cat', 'pig', 'pig'];
+const arrBixos = ['horse', 'horse', 'dog', 'dog', 'cat', 'cat', 'pig', 'pig', 'rat', 'rat', 'sheep', 'sheep'];
 
 //variável que vai mudar e que vai estar em cada elemento carta do html
-let cardBixo = ['horse', 'horse', 'dog', 'dog', 'cat', 'cat', 'pig', 'pig'];
-let isClicked = [false, false, false, false, false, false, false, false];
+let cardBixo = ['horse', 'horse', 'dog', 'dog', 'cat', 'cat', 'pig', 'pig', 'rat', 'rat', 'sheep', 'sheep'];
+let isClicked = [false, false, false, false, false, false, false, false, false, false, false, false];
 
 //lincando as divs (cartas) com variáveis
 const card = [
@@ -18,7 +17,11 @@ const card = [
     document.getElementById('card5'),
     document.getElementById('card6'),
     document.getElementById('card7'),
-    document.getElementById('card8')
+    document.getElementById('card8'),
+    document.getElementById('card9'),
+    document.getElementById('card10'),
+    document.getElementById('card11'),
+    document.getElementById('card12')
 ];
 
 
@@ -75,3 +78,7 @@ card[4].addEventListener('click', flipCard.bind('click', 4));
 card[5].addEventListener('click', flipCard.bind('click', 5));
 card[6].addEventListener('click', flipCard.bind('click', 6));
 card[7].addEventListener('click', flipCard.bind('click', 7));
+card[8].addEventListener('click', flipCard.bind('click', 8));
+card[9].addEventListener('click', flipCard.bind('click', 9));
+card[10].addEventListener('click', flipCard.bind('click', 10));
+card[11].addEventListener('click', flipCard.bind('click', 11));
