@@ -24,8 +24,11 @@ const card = [
     document.getElementById('card12')
 ];
 
+// Botão de start do jogo
+const start = document.getElementById('startButton');
 
-//Cria um array com números para lincar com o array dos bixos
+
+//função de iniciar jogo, mistura as cartas e desvira todas
 function mixCards() {
     let cardsMixed = [];
     for (let i = 0; i < arrBixos.length; i++) {
@@ -49,10 +52,6 @@ function mixCards() {
     }
 }
 
-let start = document.getElementById('startButton');
-start.onclick = mixCards;
-
-
 // funçoes para virar cada carta
 function flipCard(num) { 
     if (isClicked[num]) { 
@@ -69,7 +68,9 @@ function flipCard(num) {
     }
 }
 
-//acionadores do clique das cartas
+//acionadores
+start.onclick = mixCards;
+
 card[0].addEventListener('click', flipCard.bind('click', 0));
 card[1].addEventListener('click', flipCard.bind('click', 1));
 card[2].addEventListener('click', flipCard.bind('click', 2));
